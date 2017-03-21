@@ -101,36 +101,44 @@
 
        <hr class="featurette-divider">
 
-    <!-- Marketing messaging and featurettes
-    ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
 
-    <div class="container marketing">
+      <!-- START THE FEATURETTES -->
 
-      <!-- Three columns of text below the carousel -->
-      <div class="row">
-        <div class="col-lg-4">
-          <img class="img-circle" src="/imagenes/images.png" alt="a" width="140" height="140">
-          <h2>Carreras</h2>
-          <p> La carrera consta de varios circuitos donde los participantes pueden inscribirse y correr en las carreras dispuestas para la competencia.</p>
-          <p><a class="btn btn-default" href="#" role="button">ver circuitos &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
+      <hr class="featurette-divider">
 
-        <div class="col-lg-4">.
-          <img class="img-circle" src="/imagenes/logo.png" alt="Generic placeholder image" width="140" height="140">
-          <h2>Campeonato de ciclismo "Condorito Corredor"</h2>
-          <p> el campoenato de ciclismo "condorito corredor" reune ciclistas principiantes y avanzados a recorrer las mejores rutas de colombia</p>
-        </div><!-- /.col-lg-4 -->
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading"> <span class="text-muted">La Carrera por el eje cafetero</span> </h2>
+          <p class="lead">Este recorrido cubre el Parque del Café, en Montenegro, Quindío. A 14 kilómetros, por un terreno llano, aparece Quimbaya, un pueblito fascinante. A partir de allí hay ondulaciones leves, hasta el primer gran ascenso en el Alto de Belalcázar, a 1.586 metros de altura, El segundo gran ascenso se produce a la altura del municipio de Risaralda, a 1.702 metros de altura. Después viene un tobogán de sube y bajas, hasta coronar en Santa Rosa de Cabal. </p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" src="/imagenes/Montenegro-SantaRosa.png" alt="Generic placeholder image">
+        </div>
+      </div>
 
-        <div class="col-lg-4">
-          <img class="img-circle" src="/imagenes/images2.png" alt="Generic placeholder image" width="140" height="140">
-          <h2>Participantes</h2>
-          <p>Las rutas estan contemplada para ciclistas de bajo a medio rendimiento, con circuitos sin montaña y de montaña segun las exigencia de los ciclistas.</p>
-          <p><a class="btn btn-default" href="#" role="button">Registrate y Participa &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
+      <hr class="featurette-divider">
 
+      <div class="row featurette">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="featurette-heading"><span class="text-muted">La ruta del valle.</span></h2>
+          <p class="lead">Una ruta de 85 kilómetros, La ruta sale de Cali por la “Vía Panorama” con rumbo al municipio de Yumbo. Después de pasar esa población, comienza una serie de subidas y bajadas por un camino no muy bien pavimentado. Pronto se alcanzan los municipios de la Cartufa, Vijes, El Vidal y Puntabrava. Al final está el Calima, el lago artificial más grande de Colombia y un verdadero regalo para los sentidos.</p>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+          <img class="featurette-image img-responsive center-block" src="/imagenes/Lago-calima.png" alt="Generic placeholder image">
+        </div>
+      </div>
 
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading"> <span class="text-muted">Ruta por Antioquia.</span></h2>
+          <p class="lead"> El trayecto tiene ascensos sucesivos, 12 en total, para ser más exactos. Por eso es apto para aficionados muy completos, con gran resistencia física al esfuerzo y al calor.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" src="/imagenes/SantafeAntioquia.png" alt="Generic placeholder image">
+        </div>
+      </div>
 
       <hr class="featurette-divider">
 

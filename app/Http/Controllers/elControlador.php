@@ -10,5 +10,9 @@ class elControlador extends Controller
     {
      return view('archivos/index');
     }
+    public function infoRutas()
+    {
+     return view('archivos/carrerasInfo');
+    }
 
 }

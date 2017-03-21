@@ -16,6 +16,7 @@ Route::get('/', function () {
 });
 
 Route::get('index', 'elControlador@index');
+Route::get('index/carreras', 'elControlador@infoRutas');
 
 Route::resource('corredores', 'corredorController@create');
 
