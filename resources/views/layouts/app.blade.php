@@ -9,7 +9,6 @@
 </head>
 <body>
  @section('barralateral')
- This is the master sidebar.
  @show
  <div class="container">
  @yield('contenido')
