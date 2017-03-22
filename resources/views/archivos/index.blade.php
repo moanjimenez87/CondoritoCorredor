@@ -40,8 +40,8 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#Sistema Información">Login </a></li>
+                <li class="active"><a href="http://localhost:8000/index">Inicio</a></li>
+                <li><a href="#Sistema Información">Ingreso </a></li>
                </ul>
             </div>
           </div>
@@ -113,7 +113,7 @@
           <img class="img-circle" src="/imagenes/images.png" alt="a" width="140" height="140">
           <h2>Carreras</h2>
           <p> La carrera consta de varios circuitos donde los participantes pueden inscribirse y correr en las carreras dispuestas para la competencia.</p>
-          <p><a class="btn btn-default" href="#" role="button">ver circuitos &raquo;</a></p>
+          <p><a class="btn btn-default" href="index/carreras" role="button">ver circuitos &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
 
         <div class="col-lg-4">.

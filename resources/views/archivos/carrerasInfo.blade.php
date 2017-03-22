@@ -40,7 +40,7 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
+                <li class="active"><a href="http://localhost:8000/index">Inicio</a></li>
                 <li><a href="#Sistema Información">Login </a></li>
                </ul>
             </div>
