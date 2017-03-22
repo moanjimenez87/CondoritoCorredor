@@ -3,13 +3,13 @@
 <h1>Add a New User</h1>
 <p class="lead">Set the information of the new user.</p>
 <hr>
-{!! Form::open(['route' => 'corredores.store']) !!}
+{!! Form::open(['route' => 'users.store']) !!}
 <div class="form-group">
- {!! Form::label('nombre', 'nombre', ['class' => 'control-label']) !!}
+ {!! Form::label('name', 'Name', ['class' => 'control-label']) !!}
  {!! Form::text('name', null, ['class' => 'form-control']) !!}
 </div>
 <div class="form-group">
- {!! Form::label('correo', 'correo', ['class' => 'control-label']) !!}
+ {!! Form::label('email', 'Email', ['class' => 'control-label']) !!}
  {!! Form::text('email', null, ['class' => 'form-control']) !!}
 </div>
 <div class="form-group">

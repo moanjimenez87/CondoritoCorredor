@@ -26,4 +26,21 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public function setPasswordAttribute($plainPassword){
+		$this->attributes['password']=
+	Hash::make($plainPassword);
+	}
+
+     public function create(Request $request)
+ {
+ return view('corredores.create');
+ }
+
+    public function store(Request $request)
+ {
+ $input = $request->all();
+ User::create($input);
+ return redirect('/home');
+ }
 }
