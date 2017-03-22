@@ -62,7 +62,7 @@
       </ol>
       <div class="carousel-inner" role="listbox">
         <div class="item active">
-          <img class="first-slide" src="/imagenes/images3.png" alt="First slide">
+          <img class="first-slide" src="/imagenes/paisaje1.png" alt="First slide">
           <div class="container">
             <div class="carousel-caption">
               <h1>Campeonato de Ciclismo "Condorito Corredor".</h1>
@@ -71,7 +71,7 @@
           </div>
         </div>
         <div class="item">
-          <img class="second-slide" src="/imagenes/ruta.png" alt="Second slide">
+          <img class="second-slide" src="/imagenes/paisaje2.png" alt="Second slide">
           <div class="container">
             <div class="carousel-caption">
               <h1>Campeonato de Ciclismo "Condorito Corredor".</h1>
@@ -80,7 +80,7 @@
           </div>
         </div>
         <div class="item">
-          <img class="third-slide" src="/imagenes/ruta1.png" alt="Third slide">
+          <img class="third-slide" src="/imagenes/paisaje3.png" alt="Third slide">
           <div class="container">
             <div class="carousel-caption">
               <h1>Campeonato de Ciclismo "Condorito Corredor".</h1>
