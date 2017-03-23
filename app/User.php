@@ -5,6 +5,8 @@ namespace App;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
+use Illuminate\Support\Facades\Hash;
+
 class User extends Authenticatable
 {
     use Notifiable;
@@ -32,15 +34,4 @@ class User extends Authenticatable
 	Hash::make($plainPassword);
 	}
 
-     public function create(Request $request)
- {
- return view('corredores.create');
- }
-
-    public function store(Request $request)
- {
- $input = $request->all();
- User::create($input);
- return redirect('/home');
- }
 }
