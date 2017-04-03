@@ -8,11 +8,7 @@
                 <div class="panel-heading">Dashboard</div>
 
                 <div class="panel-body">
-                    You are logged in! <br>
-                    <br>
-                    <ol>
-                        <ul><a href="{!! url('users/') !!}">Manage users</a></ul>.
-                    </ol>
+                    You are logged in!
                 </div>
             </div>
         </div>
