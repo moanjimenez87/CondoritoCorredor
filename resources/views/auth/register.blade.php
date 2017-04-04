@@ -2,21 +2,21 @@
 
 @section('content')
 
+<div class="col-lg-4">
+          <img class="img-circle" src="/imagenes/images2.png" alt="Generic placeholder image" width="140" height="140">
+          <h2>Participantes</h2>
+         </div><!-- /.col-lg-4 -->
 
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
              <div class="panel panel-default">
 
-                <div class="panel-heading">Register</div>
-                 <div class="col-lg-4">
-          <img class="img-circle" src="/imagenes/images2.png" alt="Generic placeholder image" width="140" height="140">
-          <h2>Participantes</h2>
-         </div><!-- /.col-lg-4 -->
+                <div class="panel-heading">Registro de Ciclistas</div>
+
                <div class="panel-body">
                     <form class="form-horizontal" role="form" method="POST" action="{{ route('register') }}">
                         {{ csrf_field() }}
-                        <hr class="featurette-divider">
 
                         <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
                             <label for="name" class="col-md-4 control-label">Nombres</label>
@@ -47,7 +47,7 @@
                         </div>
 
                         <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
-                            <label for="password" class="col-md-4 control-label">Pasaporte</label>
+                            <label for="password" class="col-md-4 control-label">Contraseña</label>
 
                             <div class="col-md-6">
                                 <input id="password" type="password" class="form-control" name="password" required>
@@ -61,7 +61,7 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="password-confirm" class="col-md-4 control-label">Confirme Pasaporte</label>
+                            <label for="password-confirm" class="col-md-4 control-label">Confirme Contraseña</label>
 
                             <div class="col-md-6">
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
