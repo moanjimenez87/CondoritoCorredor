@@ -22,6 +22,8 @@ Route::get('index', 'elControlador@index');
 
 Route::resource('carreras', 'carrerasController');
 
+Route::resource('ciclistaxCarrera', 'ciclistaxrutaController');
+
 
 
 Auth::routes();

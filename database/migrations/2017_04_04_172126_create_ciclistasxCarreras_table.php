@@ -15,8 +15,11 @@ class CreateCiclistasxCarrerasTable extends Migration
     {
         Schema::create('ciclistasxcarreras', function (Blueprint $table) {
             $table->increments('id');
+             $table->string('nombreUsuario');
+            $table->string('NombreCarrera');
+            $table->rememberToken();
             $table->timestamps();
-        });
+         });
     }
 
     /**

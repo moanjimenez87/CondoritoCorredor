@@ -18,10 +18,8 @@
     </div>
 @endif
 
-{!! Form::model($data, [
-    'method' => 'PUT',
-    'route' => ['carreras.update', $data->id]
-]) !!}
+<form method="post" action="/carreras/{{$$corredor->id}}">
+    <input name="_method" type="hidden" value="PUT">
 
 <div class="form-group">
     {!! Form::label('name', 'Name', ['class' => 'control-label']) !!}
@@ -32,5 +30,7 @@
 {!! Form::submit('Update User', ['class' => 'btn btn-primary']) !!}
 
 {!! Form::close() !!}
+
+    </form>
 
 @stop
