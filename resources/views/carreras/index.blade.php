@@ -40,6 +40,18 @@
 
 <h3>{{ $corredor->name }}</h3>
 
+<p>
+    <a href="{{!! url('carreras/update') !!}, $corredor->id) }" class="btn btn-primary">Edit User</a>
+   <a href="{{!! url('carreras/show') !!}, $corredor->id) }" class="btn btn-primary">View User</a>
+
+    {!! Form::open([
+        'method' => 'DELETE',
+        'route' => ['carreras.destroy', $corredor->id]
+    ]) !!}
+    {!! Form::submit('Delete this user?', ['class' => 'btn btn-danger']) !!}
+    {!! Form::close() !!}
+</p>
+<hr>
 <hr>
 
 @endforeach
