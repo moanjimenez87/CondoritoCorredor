@@ -8,6 +8,8 @@ use App\ruta;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 
 use Session;
+use Billing;
+
 
 class rutaController extends Controller
 {
@@ -33,6 +35,14 @@ class rutaController extends Controller
 
         return view('rutas.index', ['list' => $cxr]);
     }
+
+    public function consulta(Request $request, $id)
+    {
+       $cxr = DB::table('rutas')
+                    ->whereBetween('created_at', array(1, 100))->get();
+    }
+
+    $date->toDateString();
 
 
      public function destroy(Request $request, $id)
