@@ -1,9 +1,8 @@
 @extends('layouts.app')
+
 @section('content')
 
-<meta name="csrf-token" content="{{ csrf_token() }}" />
-<input type="hidden" name="_token" value="{{ csrf_token() }}">
-<!-- Carousel
+ <!-- Carousel
     ================================================== -->
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
@@ -32,28 +31,29 @@
 
        <hr class="featurette-divider">
 
-<p class="lead">Por Favor Ingrese la Información del circuito</p>
+<h1>Carreras que has inscrito</h1>
+<p class="lead">Esta es la lista de carreras las cuales estas inscritos.
+    <a href="{!! url('rutas/create') !!}">Desea Inscribirse alguna carrera?</a></p>
 <hr>
 
-@if($errors->any())
-    <div class="alert alert-danger">
-        @foreach($errors->all() as $error)
-            <p>{{ $error }}</p>
-        @endforeach
-    </div>
-@endif
 
-<form method="post" action="/ciclistasxCarrera">
 
-<div class="form-group">
- {!! Form::label('nombreUsuario', 'Nombre de la Carrera', ['class' => 'control-label']) !!}
- {!! Form::text('nombreUsuario', null, ['class' => 'form-control']) !!}
-</div>
- <div class="form-group">
- {!! Form::label('NombreCarrera', 'Nombre de la Carrera', ['class' => 'control-label']) !!}
- {!! Form::text('NombreCarrera', null, ['class' => 'form-control']) !!}
-</div>
+@foreach($list as $cxr)
 
-{!! Form::submit('Guardar Carrera', ['class' => 'btn btn-primary']) !!}
-{!! Form::close() !!}
+<h3>{{ $cxr->NombreCarrera }}</h3>
+
+<p>
+    {!! Form::open([
+        'method' => 'DELETE',
+        'route' => ['rutas.destroy', $cxr->id]
+    ]) !!}
+    {!! Form::submit('Deseas eliminar inscripcion?', ['class' => 'btn btn-danger']) !!}
+    {!! Form::close() !!}
+</p>
+<hr>
+
+@endforeach
+
+
+
 @stop

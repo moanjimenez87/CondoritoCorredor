@@ -1,8 +1,9 @@
 @extends('layouts.app')
-
 @section('content')
 
- <!-- Carousel
+<meta name="csrf-token" content="{{ csrf_token() }}" />
+<input type="hidden" name="_token" value="{{ csrf_token() }}">
+<!-- Carousel
     ================================================== -->
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
@@ -31,9 +32,39 @@
 
        <hr class="featurette-divider">
 
-<h1>Users List</h1>
-<p class="lead">Here's a list of all your users.
-    <a href="{!! url('ciclistasxrutas/create') !!}">Desea Inscribirse alguna carrera?</a></p>
+<p class="lead">Por Favor Ingrese la Información del circuito</p>
 <hr>
+
+@if($errors->any())
+    <div class="alert alert-danger">
+        @foreach($errors->all() as $error)
+            <p>{{ $error }}</p>
+        @endforeach
+    </div>
+@endif
+
+<form method="post" action="/rutas">
+
+<div class="form-group">
+ {!! Form::label('nombreUsuario', 'Nombre de la Carrera', ['class' => 'control-label']) !!}
+ {!! Form::text('nombreUsuario', null, ['class' => 'form-control']) !!}
+</div>
+ <div class="form-group">
+ {!! Form::label('NombreCarrera', 'Nombre de la Carrera', ['class' => 'control-label']) !!}
+ {!! Form::text('NombreCarrera', null, ['class' => 'form-control']) !!}
+</div>
+
+{!! Form::submit('Guardar Carrera', ['class' => 'btn btn-primary']) !!}
+{!! Form::close() !!}
+
+
+$corredor = DB::carrera('name')->get();
+
+foreach ($corredor as $corredor)
+{
+    echo $corredor->name;
+}
+
+
 
 @stop

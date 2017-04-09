@@ -22,7 +22,7 @@ Route::get('index', 'elControlador@index');
 
 Route::resource('carreras', 'carrerasController');
 
-Route::resource('ruta', 'ciclistaxrutaController');
+Route::resource('rutas', 'rutaController');
 
 
 
