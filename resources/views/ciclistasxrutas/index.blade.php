@@ -31,18 +31,9 @@
 
        <hr class="featurette-divider">
 
-
-@foreach($list as $corredor)
-
-<h3>{{ $corredor->name }}</h3>
-
-<p>
-    <a href="{{!! url('ciclistasxrutas/create') !!}, $corredor->id) }" class="btn btn-primary">Seleccionar la carrera</a>
-
-</p>
+<h1>Users List</h1>
+<p class="lead">Here's a list of all your users.
+    <a href="{!! url('ciclistasxrutas/create') !!}">Desea Inscribirse alguna carrera?</a></p>
 <hr>
-<hr>
-
-@endforeach
 
 @stop

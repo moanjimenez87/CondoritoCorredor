@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use App\ciclistaxruta;
+use App\ruta;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 
 use Session;
@@ -19,7 +19,7 @@ class ciclistaxrutaController extends Controller
     public function store(Request $request)
     {
 
-        $cxr = new ciclistaxCarrera();
+        $cxr = new ruta();
         $cxr->nombreUsuario= $request->nombreUsuario;
          $cxr->NombreCarrera= $request->NombreCarrera;
         $cxr -> save();
@@ -29,7 +29,7 @@ class ciclistaxrutaController extends Controller
 
     public function index(Request $request)
     {
-        $cxr = ciclistaxCarrera::all();
+        $cxr = ruta::all();
 
         return view('ciclistasxrutas.index', ['list' => $cxr]);
     }

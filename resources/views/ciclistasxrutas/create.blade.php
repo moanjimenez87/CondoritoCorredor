@@ -43,7 +43,7 @@
     </div>
 @endif
 
-<form method="post" action="/carreras">
+<form method="post" action="/ciclistasxCarrera">
 
 <div class="form-group">
  {!! Form::label('nombreUsuario', 'Nombre de la Carrera', ['class' => 'control-label']) !!}
