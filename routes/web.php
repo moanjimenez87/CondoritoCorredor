@@ -15,10 +15,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/index/carreras', function () {
+    return view('archivos/carrerasInfo');
+});
 
 
-
-Route::get('index', 'elControlador@index');
+Route::get('/index', 'elControlador@index');
 
 Route::resource('carreras', 'carrerasController');
 

@@ -53,7 +53,7 @@ class UserController extends Controller
 
         User::create($input);
 
-        return redirect('/home');
+        return redirect('/carreras');
     }
 
     public function edit(Request $request, $id)
@@ -90,7 +90,7 @@ class UserController extends Controller
 
         Session::flash('flash_message', 'User successfully edited!');
 
-        return redirect('/home');
+        return redirect('/carreras');
       }
       catch(ModelNotFoundException $e)
       {
@@ -111,7 +111,7 @@ class UserController extends Controller
         Session::flash('flash_message', 'User successfully deleted!');
 
         // return redirect()->route('users.index');
-        return redirect('/home');
+        return redirect('/carreras');
       }
       catch(ModelNotFoundException $e)
       {
