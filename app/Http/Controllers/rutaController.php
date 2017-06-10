@@ -42,7 +42,6 @@ class rutaController extends Controller
                     ->whereBetween('created_at', array(1, 100))->get();
     }
 
-    $date->toDateString();
 
 
      public function destroy(Request $request, $id)
