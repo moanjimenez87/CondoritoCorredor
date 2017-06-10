@@ -72,7 +72,7 @@
           <div class="container">
             <div class="carousel-caption">
               <h1>Campeonato de Ciclismo "Condorito Corredor".</h1>
-              <p><a class="btn btn-lg btn-primary" href="7home" role="button">Registrate y Participa</a></p>
+              <p><a class="btn btn-lg btn-primary" href="/home" role="button">Registrate y Participa</a></p>
             </div>
           </div>
         </div>
@@ -81,7 +81,7 @@
           <div class="container">
             <div class="carousel-caption">
               <h1>Campeonato de Ciclismo "Condorito Corredor".</h1>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Registrate y Participa</a></p>
+              <p><a class="btn btn-lg btn-primary" href="/home" role="button">Registrate y Participa</a></p>
             </div>
           </div>
         </div>

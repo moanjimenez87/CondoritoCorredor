@@ -10,7 +10,5 @@ class ruta extends Model
     'nombreUsuario','NombreCarrera',
     ];
 
-    protected $hidden = [
-        'remember_token',
-    ];
+
 }

@@ -10,7 +10,5 @@ class ciclistasxCarrera extends Model
     'nombreUsuario','NombreCarrera',
     ];
 
-    protected $hidden = [
-        'remember_token',
-    ];
+
 }

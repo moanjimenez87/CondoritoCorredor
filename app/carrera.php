@@ -15,8 +15,5 @@ class carrera extends Model
     'name',
     ];
 
-    protected $hidden = [
-        'remember_token',
-    ];
 
 }
